@@ -1,4 +1,4 @@
---- Big images in the select character panel ---
+--- Big images (Character Portraits) in the select character panel ---
 
 st_pack_progress_pt_ps3 -> chara_up_chips_l_000.vram
 

@@ -1,0 +1,11 @@
+Name,Value,Start,Size,Color
+"char multiple functions: 00 deactivate, 10 activates glow shaders, more research necessary",16,2h,1h,Fg: Bg:0x00007F
+char number of hits,0,3h,1h,Fg: Bg:0x3399FF
+char attack damage[2],,18h,2h,Fg: Bg:0x00BF5F
+char cost of attack,0,1Bh,1h,Fg: Bg:0xBFBF00
+char melee power up,100 'd',20h,1h,Fg: Bg:0xBF5F00
+char defense power up,100 'd',21h,1h,Fg: Bg:0xBF0000
+char super attack power up,100 'd',23h,1h,Fg: Bg:0xBF005F
+char ki power up,100 'd',29h,1h,Fg: Bg:0x3F007F
+"char controls if a skill is stackable; 00 is infinite, 01 is 3 times, 02 might be deactivated",1,32h,1h,Fg: Bg:0xBF00BF
+char camera values[4],ÿÿÿ,48h,4h,Fg: Bg:0x3333FF
