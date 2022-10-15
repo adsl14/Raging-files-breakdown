@@ -1,0 +1,1 @@
+Has an ID (not the character) slot that will be used in cs_data.dat (the order of the info in cs_data is equal to the ID counter in cs_data_chip.dat)

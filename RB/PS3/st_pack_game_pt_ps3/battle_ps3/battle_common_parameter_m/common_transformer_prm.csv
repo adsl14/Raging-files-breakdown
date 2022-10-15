@@ -1,0 +1,4 @@
+Name,Value,Start,Size,Color
+uchar Unknown[3],,0,3,Fg: Bg:0x000000
+uchar Transformations_ID[4],,3,4,Fg: Bg:0x3F007F
+uchar Unknown[26],,7,26,Fg: Bg:0x000000

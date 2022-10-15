@@ -1,0 +1,3 @@
+Name,Value,Start,Size,Color
+float Health,40000,0,4,Fg: Bg:0x007F00
+float Unknown[43],,4,172,Fg: Bg:0x000000

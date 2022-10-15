@@ -1,0 +1,5 @@
+Name,Value,Start,Size,Color
+uint ID_character_panel_roster,0,16,4,Fg: Bg:0x7F0000
+uint Number_transformations,67108864,20,4,Fg: Bg:0x00007F
+uint UNK,0,24,4,Fg: Bg:0x7F7F00
+uint ID_character_transformation[5],,28,20,Fg: Bg:0x7F007F
