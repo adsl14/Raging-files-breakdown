@@ -1,0 +1,6 @@
+Name,Value,Start,Size,Color
+uint ID_Slot,0,0,4,Fg: Bg:0x3F007F
+uint Character_ID(not_used_apparently),0,4,4,Fg: Bg:0x003F7F
+uint Number_of_transformations_(max_5),67108864,8,4,Fg: Bg:0x007F7F
+uint Character_ID(searched_by_cs_chip.dat),0,12,4,Fg: Bg:0x007F3F
+uint Character_ID_trans_slot_0[5],,16,20,Fg: Bg:0x3F003F

@@ -1,0 +1,9 @@
+Name,Value,Start,Size,Color
+uint Aura_type,0,0,4,Fg: Bg:0x7F7F00
+uint Up_blast_attack,0,4,4,Fg: Bg:0xBF005F
+uint Right_blast_attack,33554432,8,4,Fg: Bg:0x00007F
+uint Down_blast_attack,83886080,12,4,Fg: Bg:0x003F7F
+uint Left_blast_attack,117440512,16,4,Fg: Bg:0x1F3F00
+uint Ultimate_blast_attack,167772160,20,4,Fg: Bg:0x7F003F
+uint Number_of_skins,117440512,32,4,Fg: Bg:0xBF5F00
+uint Number_of_damaged_skins,67108864,36,4,Fg: Bg:0x0000BF

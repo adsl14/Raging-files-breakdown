@@ -1,0 +1,2 @@
+Name,Value,Start,Size,Color
+uint blast_attack_list[10],,56,40,Fg: Bg:0x003F7F

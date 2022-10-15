@@ -1,0 +1,2 @@
+List of character attacks for the personalization menu.
+Each character is 168 length

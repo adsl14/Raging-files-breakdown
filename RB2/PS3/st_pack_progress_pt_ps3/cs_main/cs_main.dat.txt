@@ -1,0 +1,2 @@
+Characters name and transformation names in the select character menu.
+Each character is 80 bytes length

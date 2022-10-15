@@ -1,0 +1,8 @@
+0x00 to 0x63 characters
+0x65 empty slot
+0xFE special character
+0xFD random character
+
+This file has the ID of the character for the main roster. If you write a ID here, the game will search in cs_form that ID (ID character or transformation slot). If the ID doesn't exists, neither in character ID block or transformation slot, the game crash.
+
+If you want to convert a transformation to a separated character, you need to change all the ID's in the transformation slot of that character or else, the separated character will have the transformations of the base character.
