@@ -1,0 +1,8 @@
+Name,Value,Start,Size,Color
+uint item_id,0,0h,4h,Fg: Bg:0x7F003F
+uint description_id,4194304000,4h,4h,Fg: Bg:0x3F007F
+uint cost_of_item,3187671039,8h,4h,Fg: Bg:0x00007F
+uint melee_amount,872415232,10h,4h,Fg: Bg:0x007F7F
+uint ki_amount,1660944384,14h,4h,Fg: Bg:0x007F3F
+uint super_amount,838860800,18h,4h,Fg: Bg:0x7F7F00
+uint defense_amount,1140850688,1Ch,4h,Fg: Bg:0x0000FF

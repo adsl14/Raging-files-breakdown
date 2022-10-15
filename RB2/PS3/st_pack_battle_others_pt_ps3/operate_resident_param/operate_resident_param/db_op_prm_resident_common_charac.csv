@@ -1,0 +1,7 @@
+Name,Value,Start,Size,Color
+char amount_of_ki_needed_for_high_tension,2,9h,1h,Fg: Bg:0x3333FF
+char how_long_high_tension_lasts,20,Bh,1h,Fg: Bg:0x00007F
+float how_long_raging_soul_lasts,8.618686e-41,Ch,4h,Fg: Bg:0x003F7F
+float amount_of_ki_gained_from_a_punch,5.748687e-41,10h,4h,Fg: Bg:0x00007F
+uint cost_of_dash,251659264,1Ch,4h,Fg: Bg:0x7F003F
+float general_camera_settings_more_research_needed[8],,B0h,20h,Fg: Bg:0x7F003F

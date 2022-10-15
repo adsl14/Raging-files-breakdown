@@ -1,0 +1,18 @@
+efdr files are different depending on the main file [eg. aura or technique etc] even then some techniques [kamehameha]
+are just different
+while different there are some uniform things:
+
+aura: 160 bytes of header
+64 bytes of binary values
+sections broken up by 960 bytes
+
+regular skills:
+224 bytes of header
+64 bytes binary
+
+depending on skill either:
+1st section: 832 bytes
+2nd section: 992
+
+
+
