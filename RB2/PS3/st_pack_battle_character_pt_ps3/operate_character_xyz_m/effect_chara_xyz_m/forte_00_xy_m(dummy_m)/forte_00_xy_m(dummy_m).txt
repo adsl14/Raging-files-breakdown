@@ -1,0 +1,6 @@
+This folder holds the parameters, keyframes and textures (only spr) for the Ki blast in the signature.
+
+Some signatures trigger a Ki blast like Vegeta or Mirai Gohan. This folder holds those Ki blast parameters.
+
+See the file forte_00_xy.vram (if the signature doesn't have any Ki blast to trigger, the file is called instead dummyV.vram, the first one you find there) inside the file effect_chara_xyz_v in order to check the textures of the
+signature

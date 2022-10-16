@@ -1,0 +1,4 @@
+Hold the textures of the Ki Blast in the signature.
+
+If the file is called dummyV.vram (the first one you find) instead, means there is no Ki Blast to trigger
+in the signature.
