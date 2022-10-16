@@ -1,0 +1,15 @@
+And I breakdown the values of each camera. This is what I noted:
+
+red 1: pivot 3d id where camera aims during animation (byte 1 id model object, byte 2 id model object and so on)
+blue: rotation axis Z in degrees start (integer)
+yellow 1: rotation axis Z in degrees end (blue + yellow 1) (integer)
+orange: camera axis Y position start (integer)
+green: camera axis Y position end (orange + green) (integer)
+brown: rotation axis Y in degrees start (integer)
+lilac: rotation axis Y in degrees end (brown + lilac) (integer)
+darkner red: zoom start (integer)
+cyan: zoom end (darkner red + cyan) (float)
+pink: camera axis Z position start (float)
+darkner blue: camera axis Z position end (float) (pink + darkner blue)
+yellow 2: camera translation and rotation velocity (float)
+red 2: unk
