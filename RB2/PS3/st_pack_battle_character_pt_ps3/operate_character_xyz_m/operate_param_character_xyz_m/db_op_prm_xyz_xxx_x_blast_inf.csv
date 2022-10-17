@@ -1,11 +1,12 @@
 Name,Value,Start,Size,Color
-char multiple_functions_00_deactivate_10_activates_glow_shaders_more_research_necessary,16,2h,1h,Fg: Bg:0x00007F
-char number_of_hits,0,3h,1h,Fg: Bg:0x3399FF
-char attack_damage[2],,18h,2h,Fg: Bg:0x00BF5F
-char cost_of_attack,0,1Bh,1h,Fg: Bg:0xBFBF00
-char melee_power_up,100 'd',20h,1h,Fg: Bg:0xBF5F00
-char defense_power_up,100 'd',21h,1h,Fg: Bg:0xBF0000
-char super_attack_power_up,100 'd',23h,1h,Fg: Bg:0xBF005F
-char ki_power_up,100 'd',29h,1h,Fg: Bg:0x3F007F
-char controls_if_a_skill_is_stackable_00_is_infinite_01_is_3_times_02_might_be_deactivated,1,32h,1h,Fg: Bg:0xBF00BF
-char camera_values[4],ÿÿÿ,48h,4h,Fg: Bg:0x3333FF
+char multiple_functions_00_deactivate_10_activates_glow_shaders_more_research_necessary,1,2h,1h,Fg: Bg:0x00007F
+char number_of_hits_maybe,3,3h,1h,Fg: Bg:0x3399FF
+char which_secondary_model_appears_during_attack,1,Ch,1h,Fg: Bg:0x007F00
+char attack_damage[2],FP,18h,2h,Fg: Bg:0x00BF5F
+char cost_of_attack,90 'Z',1Bh,1h,Fg: Bg:0xBFBF00
+char melee_power_up,0,20h,1h,Fg: Bg:0xBF5F00
+char defense_power_up,0,21h,1h,Fg: Bg:0xBF0000
+char super_attack_power_up,0,23h,1h,Fg: Bg:0xBF005F
+char ki_power_up,0,29h,1h,Fg: Bg:0x3F007F
+char controls_if_a_skill_is_stackable_00_is_infinite_01_is_3_times_02_might_be_deactivated,0,32h,1h,Fg: Bg:0xBF00BF
+char camera_values[4],ÿÿ,48h,4h,Fg: Bg:0x3333FF
