@@ -1,5 +1,8 @@
 db_font_pad_PS3_s ---> item_parameter.dat
+
 --- Item Parameters ---
 Each item has a length of 84 bytes. 
 The values after the bookmarks different depending on what you change. You can have items that regenerate health but looking at another item in that same spot will show that the section is not dedicated to regeneration of health but rather different effects.
 
+db_font_pad_PS3_s ---> preset_strength_table.dat
+Controls the "Limit Points" in customization menu, more research needed
