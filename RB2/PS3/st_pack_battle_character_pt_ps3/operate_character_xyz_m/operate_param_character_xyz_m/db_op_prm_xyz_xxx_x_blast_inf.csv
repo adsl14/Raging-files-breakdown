@@ -1,12 +1,17 @@
 Name,Value,Start,Size,Color
 char multiple_functions_00_deactivate_10_activates_glow_shaders_more_research_necessary,1,2h,1h,Fg: Bg:0x00007F
-char number_of_hits_maybe,3,3h,1h,Fg: Bg:0x3399FF
-char which_secondary_model_appears_during_attack,1,Ch,1h,Fg: Bg:0x007F00
-char attack_damage[2],FP,18h,2h,Fg: Bg:0x00BF5F
-char cost_of_attack,90 'Z',1Bh,1h,Fg: Bg:0xBFBF00
-char melee_power_up,0,20h,1h,Fg: Bg:0xBF5F00
-char defense_power_up,0,21h,1h,Fg: Bg:0xBF0000
+char number_of_hits_maybe,5,3h,1h,Fg: Bg:0x3399FF
+char which_secondary_model_appears_during_attack,0,Ch,1h,Fg: Bg:0x007F00
+float reach_of_attack,8.96831e-44,10h,4h,Fg: Bg:0x1F003F
+char attack_damage[2],'Ø,18h,2h,Fg: Bg:0x00BF5F
+char cost_of_attack,45 '-',1Bh,1h,Fg: Bg:0xBFBF00
+char melee_power_up,0,20h,1h,Fg:0xBFBF00 Bg:
+char defense_power_up,0,21h,1h,Fg: Bg:0x5F00BF
 char super_attack_power_up,0,23h,1h,Fg: Bg:0xBF005F
 char ki_power_up,0,29h,1h,Fg: Bg:0x3F007F
 char controls_if_a_skill_is_stackable_00_is_infinite_01_is_3_times_02_might_be_deactivated,0,32h,1h,Fg: Bg:0xBF00BF
-char camera_values[4],ÿÿ,48h,4h,Fg: Bg:0x3333FF
+char camera_values[4],ÿÿÿ,48h,4h,Fg: Bg:0x3333FF
+char attack_activation_effect,-126,4Eh,1h,Fg: Bg:0xBF8599
+char controls_if_attack_is_chargeable_or_if_it_can_boost,113 'q',4Fh,1h,Fg: Bg:0x7F0000
+float speed_of_attack,1.176724e-38,54h,4h,Fg: Bg:0x7F0000
+float size_of_attack,4.600603e-41,5Ch,4h,Fg: Bg:0x007F7F
