@@ -1,0 +1,22 @@
+ap_character_psk.zpak:
+
+1st ap file in the afs is japanese
+
+2nd ap file in the afs is english
+
+ap files hold:
+.pak files which are .vag files with sounds or voices/grunts:
+ap: sound effects in character intros
+cr: crash sound effect most likely
+th: throw
+tk: signature sound effect
+
+cv_000_us_ps3.pak: grunts/attack noises/taunts/ki blast grunts (CV = Character Voice)
+
+chara_000_voicetbl.dat: controls which voice line is said during action (signature, activation of skills)
+
+chara_000_skillseseqtbl.dat: holds the amount of sounds effects used in a signature skill (goku doesnt have any since he uses a generic punch, cell has 4 since he has four steps in his signature)
+
+se_sequence folders: holds data on which sound effect is used during that specific action (example: goku charges so charge sound effect, seseq file points to a specific sound effect probably in one of the paks so the correct sound can play during animation)
+
+.lps: character lips file, exactly budokai tenkaichi 3. research has been done and can be incorporated here.
