@@ -1,5 +1,7 @@
 ap_character_psk.zpak:
 
+ap stands for: audio pack
+
 1st ap file in the afs is japanese
 
 2nd ap file in the afs is english
