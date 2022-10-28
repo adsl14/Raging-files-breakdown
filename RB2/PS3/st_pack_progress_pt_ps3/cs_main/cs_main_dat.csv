@@ -1,0 +1,4 @@
+Name,Value,Start,Size,Color
+char character_id,0,3h,1h,Fg: Bg:0x3F0000
+char character_name_id,0,7h,1h,Fg: Bg:0x1F003F
+char subtitle_id[1],ÿ,Bh,1h,Fg: Bg:0x003F00
