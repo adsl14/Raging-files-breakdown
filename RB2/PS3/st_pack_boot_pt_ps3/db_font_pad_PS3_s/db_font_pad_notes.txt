@@ -6,3 +6,5 @@ The values after the bookmarks different depending on what you change. You can h
 
 db_font_pad_PS3_s ---> preset_strength_table.dat
 Controls the "Limit Points" in customization menu, more research needed
+
+db_font_pad_PS3_s ---> preset_appearance_table.dat has something to do with galaxy mode
