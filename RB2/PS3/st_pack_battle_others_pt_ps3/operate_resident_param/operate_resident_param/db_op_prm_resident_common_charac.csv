@@ -1,7 +1,15 @@
 Name,Value,Start,Size,Color
-char amount_of_ki_needed_for_high_tension,2,9h,1h,Fg: Bg:0x3333FF
-char how_long_high_tension_lasts,20,Bh,1h,Fg: Bg:0x00007F
-float how_long_raging_soul_lasts,8.618686e-41,Ch,4h,Fg: Bg:0x003F7F
-float amount_of_ki_gained_from_a_punch,5.748687e-41,10h,4h,Fg: Bg:0x00007F
-uint cost_of_dash,251659264,1Ch,4h,Fg: Bg:0x7F003F
+char speed_of_high_tension_charge_lower_faster_higher_slower,2,9h,1h,Fg: Bg:0x00BF5F
+char length_of_high_tension,20,Bh,1h,Fg: Bg:0xBFBF00
+char amount_of_time_in_raging_soul[4],Að,Ch,4h,Fg: Bg:0x7F7F00
+char ki_gained_from_melee[4],@ ,10h,4h,Fg: Bg:0x3F7F00
+char ability_to_speed_dash_behind,1,18h,1h,Fg: Bg:0x3F007F
+uint cost_of_dash,262159,1Ch,4h,Fg: Bg:0x7F003F
+char amount_of_ki_used_in_dash,4,1Dh,1h,Fg: Bg:0x00007F
+char camera_angle_0[4],?À,7Ch,4h,Fg: Bg:0xFF00FF
+char camera_angle_1[4],@ù™š,80h,4h,Fg: Bg:0x0080FF
+char camera_zoom[4],?À,84h,4h,Fg: Bg:0x0000FF
+char camera_follows?[4],?€,8Ch,4h,Fg: Bg:0x8000FF
+char camera[4],>ÌÌÍ,94h,4h,Fg: Bg:0x003F7F
+char camera[4],>ÌÌÍ,98h,4h,Fg: Bg:0x00007F
 float general_camera_settings_more_research_needed[8],,B0h,20h,Fg: Bg:0x7F003F
