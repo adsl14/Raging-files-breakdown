@@ -7,4 +7,5 @@ st_pack_progress_pt_ps3 -> chara_up_chips_l_000.vram
 cs_chip.zpack
 
 --- Character names ---
-K_CharacterName_SP.zpak
+K_CharacterName_SP.zpak (spanish)
+K_CharacterName_US.zpak (english)
