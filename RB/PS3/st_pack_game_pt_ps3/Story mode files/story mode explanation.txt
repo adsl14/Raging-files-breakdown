@@ -1,0 +1,11 @@
+0A or 1A is a pointer to instructions followed by the value: 0A 04 
+
+to find true value, go to gsdt section copy from under the header to next to last EOFC. paste it into a blank hex file.
+get your value ( for example 04) multiply times 4 = 16
+16 is the location of the specific byte
+go to your new hex file you pasted gsdt into, press CONTROL+G and paste 16 (make sure its decimal)
+the value your brought to is the true value the instructions are pointing to
+now let's say you wanna switch the values, we'll go to spot you want. take note of location.
+divide that by 4, and convert to hex and move to original gsc file
+now put that new value over the old value (4) 
+done!
