@@ -1,0 +1,23 @@
+Name,Value,Start,Size,Color
+char audio?[8],,C0h,8h,Fg: Bg:0x0000BF
+char scenario_unlock_rewards[4],,D8h,4h,Fg: Bg:0x7F0000
+char music_rewards[4],,E8h,4h,Fg: Bg:0x7F003F
+char museum_rewards[4],,F8h,4h,Fg: Bg:0x7F003F
+char character_rewards[4],,108h,4h,Fg: Bg:0x7F007F
+char unlocks_attack[4],o,11Ch,4h,Fg: Bg:0x3F007F
+char item_reward[4],,140h,4h,Fg: Bg:0x3F007F
+char map,8,185h,1h,Fg: Bg:0x3F007F
+char ost,9,189h,1h,Fg: Bg:0x7F007F
+char number_of_characters,20,1B1h,1h,Fg: Bg:0x3F007F
+char scenario_start[4],e,1C8h,4h,Fg: Bg:0x3F7F00
+char string_character[4],,1E8h,4h,Fg: Bg:0x007F7F
+char actor_id,11,1EDh,1h,Fg: Bg:0x7F3F00
+char _character,12,1F5h,1h,Fg: Bg:0x007F00
+char outfit_number,10,1F9h,1h,Fg: Bg:0x007F3F
+char battle_damaged,10,1FDh,1h,Fg: Bg:0xBFBF00
+char health,13,209h,1h,Fg: Bg:0x7F3F00
+char pointer_for_attacks[4],,228h,4h,Fg: Bg:0x3F007F
+char health,13,265h,1h,Fg: Bg:0x7F3F00
+char subtitle_string[4],v,944h,4h,Fg: Bg:0x7F007F
+char starting_position,11,FD9h,1h,Fg: Bg:0x0000BF
+char camera_strings[4],5,1090h,4h,Fg: Bg:0x0000BF
