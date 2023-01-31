@@ -1,0 +1,5 @@
+Name,Value,Start,Size,Color
+char Number_of_characters[4],,0h,4h,Fg: Bg:0x00007F
+char signature_parameter_0[4],,4h,4h,Fg: Bg:0x007F7F
+char Character_ID[4],,8h,4h,Fg: Bg:0x007F3F
+char signature_parameters[84],,Ch,54h,Fg: Bg:0x7F7F00
