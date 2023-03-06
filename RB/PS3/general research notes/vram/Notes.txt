@@ -1,0 +1,6 @@
+--- PORTS de RB2 a RB1 ---
+El juego crasheará en consola si hay alguna textura/shader que tenga un valor de mipmaps mayor de 4.
+Los valores de mipmaps permitidos son del 1 al 4.
+
+Si sigue crasheando, es posible que haya alguna textura no termine con un tamaño que sea 0 en módulo 16, por lo que habría que rellenar con ceros hasta que el tamaño total
+de la textura sea 0 en módulo 16
