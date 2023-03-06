@@ -1,0 +1,334 @@
+goku_0_D_1p_dougi_2_D
+Name offset: 1
+Data offset: 0
+Data size: 36
+Child count: 0
+Child offset: 0
+unk00: 34
+data_offset_image: 0
+unk08: 0
+data_size_image: 43696
+width_image: 256
+height_image: 128
+unk14: 1
+mip_maps_image: 7
+unk18: 0
+unk1c: 2804419200
+encoding_image: 24
+--------------------------------------------------------
+--------------------------------------------------------
+Separator: 80
+goku_0_D_1p_face_D
+Name offset: 93
+Data offset: 192
+Data size: 36
+Child count: 0
+Child offset: 0
+unk00: 34
+data_offset_image: 830336
+unk08: 0
+data_size_image: 43696
+width_image: 256
+height_image: 128
+unk14: 1
+mip_maps_image: 7
+unk18: 0
+unk1c: 2804419200
+encoding_image: 24
+--------------------------------------------------------
+--------------------------------------------------------
+Separator: 80
+goku_0_D_1p_dougi_1_D
+Name offset: 390
+Data offset: 816
+Data size: 36
+Child count: 0
+Child offset: 0
+unk00: 34
+data_offset_image: 1694080
+unk08: 0
+data_size_image: 43696
+width_image: 256
+height_image: 128
+unk14: 1
+mip_maps_image: 7
+unk18: 0
+unk1c: 2804419200
+encoding_image: 24
+--------------------------------------------------------
+--------------------------------------------------------
+Separator: 80
+goku_0_D_1p_shirts
+Name offset: 464
+Data offset: 960
+Data size: 36
+Child count: 0
+Child offset: 0
+unk00: 34
+data_offset_image: 2174848
+unk08: 0
+data_size_image: 43696
+width_image: 256
+height_image: 128
+unk14: 1
+mip_maps_image: 7
+unk18: 0
+unk1c: 2804419200
+encoding_image: 24
+--------------------------------------------------------
+--------------------------------------------------------
+Separator: 80
+goku_0_D_1p_shirts_D
+Name offset: 535
+Data offset: 1104
+Data size: 36
+Child count: 0
+Child offset: 0
+unk00: 34
+data_offset_image: 2393472
+unk08: 0
+data_size_image: 43696
+width_image: 256
+height_image: 128
+unk14: 1
+mip_maps_image: 7
+unk18: 0
+unk1c: 2804419200
+encoding_image: 24
+--------------------------------------------------------
+--------------------------------------------------------
+Separator: 80
+goku_0_D_1p_obi
+Name offset: 629
+Data offset: 1296
+Data size: 36
+Child count: 0
+Child offset: 0
+unk00: 34
+data_offset_image: 3857408
+unk08: 0
+data_size_image: 174768
+width_image: 512
+height_image: 256
+unk14: 1
+mip_maps_image: 8
+unk18: 0
+unk1c: 2804419200
+encoding_image: 24
+--------------------------------------------------------
+--------------------------------------------------------
+Separator: 80
+goku_0_D_1p_ase
+Name offset: 139
+Data offset: 288
+Data size: 36
+Child count: 0
+Child offset: 0
+unk00: 2
+data_offset_image: 961536
+unk08: 0
+data_size_image: 10920
+width_image: 128
+height_image: 128
+unk14: 1
+mip_maps_image: 6
+unk18: 0
+unk1c: 2804419200
+encoding_image: 8
+--------------------------------------------------------
+--------------------------------------------------------
+Separator: 88
+goku_0_D_1p_tooth_1
+Name offset: 181
+Data offset: 384
+Data size: 36
+Child count: 0
+Child offset: 0
+unk00: 2
+data_offset_image: 994432
+unk08: 0
+data_size_image: 43688
+width_image: 256
+height_image: 256
+unk14: 1
+mip_maps_image: 7
+unk18: 0
+unk1c: 2804419200
+encoding_image: 8
+--------------------------------------------------------
+--------------------------------------------------------
+Separator: 88
+goku_0_D_1p_mouth_1
+Name offset: 231
+Data offset: 480
+Data size: 36
+Child count: 0
+Child offset: 0
+unk00: 2
+data_offset_image: 1125632
+unk08: 0
+data_size_image: 43688
+width_image: 256
+height_image: 256
+unk14: 1
+mip_maps_image: 7
+unk18: 0
+unk1c: 2804419200
+encoding_image: 8
+--------------------------------------------------------
+--------------------------------------------------------
+Separator: 88
+goku_0_D_1p_tooth_2
+Name offset: 255
+Data offset: 528
+Data size: 36
+Child count: 0
+Child offset: 0
+unk00: 2
+data_offset_image: 1169408
+unk08: 0
+data_size_image: 43688
+width_image: 256
+height_image: 256
+unk14: 1
+mip_maps_image: 7
+unk18: 0
+unk1c: 2804419200
+encoding_image: 8
+--------------------------------------------------------
+--------------------------------------------------------
+Separator: 88
+goku_0_D_1p_eair
+Name offset: 325
+Data offset: 672
+Data size: 36
+Child count: 0
+Child offset: 0
+unk00: 2
+data_offset_image: 1388032
+unk08: 0
+data_size_image: 43688
+width_image: 256
+height_image: 256
+unk14: 1
+mip_maps_image: 7
+unk18: 0
+unk1c: 2804419200
+encoding_image: 8
+--------------------------------------------------------
+--------------------------------------------------------
+Separator: 88
+goku_0_potara_1p
+Name offset: 369
+Data offset: 768
+Data size: 36
+Child count: 0
+Child offset: 0
+unk00: 2
+data_offset_image: 1519232
+unk08: 0
+data_size_image: 174760
+width_image: 512
+height_image: 512
+unk14: 1
+mip_maps_image: 8
+unk18: 0
+unk1c: 2804419200
+encoding_image: 8
+--------------------------------------------------------
+--------------------------------------------------------
+Separator: 88
+goku_0_D_1p_skin_2
+Name offset: 560
+Data offset: 1152
+Data size: 36
+Child count: 0
+Child offset: 0
+unk00: 2
+data_offset_image: 2437248
+unk08: 0
+data_size_image: 699048
+width_image: 1024
+height_image: 1024
+unk14: 1
+mip_maps_image: 9
+unk18: 0
+unk1c: 2804419200
+encoding_image: 8
+--------------------------------------------------------
+--------------------------------------------------------
+Separator: 88
+goku_0_D_1p_skin_1
+Name offset: 606
+Data offset: 1248
+Data size: 36
+Child count: 0
+Child offset: 0
+unk00: 2
+data_offset_image: 3158272
+unk08: 0
+data_size_image: 699048
+width_image: 1024
+height_image: 1024
+unk14: 1
+mip_maps_image: 9
+unk18: 0
+unk1c: 2804419200
+encoding_image: 8
+--------------------------------------------------------
+--------------------------------------------------------
+Separator: 88
+goku_0_D_1p_eyeball.1
+Name offset: 875
+Data offset: 1872
+Data size: 36
+Child count: 0
+Child offset: 0
+unk00: 2
+data_offset_image: 4392064
+unk08: 0
+data_size_image: 43688
+width_image: 256
+height_image: 256
+unk14: 1
+mip_maps_image: 7
+unk18: 0
+unk1c: 2804419200
+encoding_image: 8
+--------------------------------------------------------
+--------------------------------------------------------
+Separator: 88
+goku_0_D_1p_eyeball.2
+Name offset: 901
+Data offset: 1920
+Data size: 36
+Child count: 0
+Child offset: 0
+unk00: 2
+data_offset_image: 4435840
+unk08: 0
+data_size_image: 43688
+width_image: 256
+height_image: 256
+unk14: 1
+mip_maps_image: 7
+unk18: 0
+unk1c: 2804419200
+encoding_image: 8
+--------------------------------------------------------
+--------------------------------------------------------
+Separator: 88
+
+--- Goku 7p ss ---
+UNK0x00 2
+dataOffset 1256960
+UNK0x08 0
+DataSize 10920
+Width 128
+Height 128
+UNK0x14 1
+Mipmaps 1
+UNK0x18 0
+UNK0x1C 2804419200
+DXT_ENCODING 8
+Separator: 88

@@ -1,0 +1,13 @@
+Texture vram template in order to separate each texture in the vram
+separator_vram -> size of the padding between textures. The padding will bes as much 0x00 as displayed below.
+
+Texture properties relation with separator size:
+width==height, encoding: dxt1, separator_vram -> 80
+width==height, encoding: dxt5, separator_vram -> 48
+width!=height, encoding dxt1, separator_vram -> 32
+width!=height, encoding dxt5, separator_vram -> 80
+
+(unk00 -> related_2_encoding in the stpr template)
+unk00: 34, encoding: 24
+unk00: 2, encoding: 8
+unk00: 2, encoding: 32

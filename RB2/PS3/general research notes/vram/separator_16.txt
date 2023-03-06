@@ -1,0 +1,20 @@
+goku_0_D_1p_dougi_N
+Name offset: 440
+Data offset: 912
+Data size: 36
+Child count: 0
+Child offset: 0
+unk00: 2
+data_offset_image: 1825280
+unk08: 0
+data_size_image: 349552
+width_image: 1024
+height_image: 256
+unk14: 1
+mip_maps_image: 9
+unk18: 0
+unk1c: 2804419200
+encoding_image: 32
+--------------------------------------------------------
+--------------------------------------------------------
+Separator: 16

@@ -1,0 +1,26 @@
+UNK0x00 34
+dataOffset 0
+UNK0x08 0
+DataSize 174080
+Width 512
+Height 256
+UNK0x14 1
+Mipmaps 4
+UNK0x18 0
+UNK0x1C 2804419200
+DXT_ENCODING 24
+Separator: 0
+
+ --- GOHAN D 2p ---
+UNK0x00 2
+dataOffset 174080
+UNK0x08 0
+DataSize 348160
+Width 512
+Height 512
+UNK0x14 1
+Mipmaps 4
+UNK0x18 0
+UNK0x1C 2804419200
+DXT_ENCODING 32
+Separator: 0

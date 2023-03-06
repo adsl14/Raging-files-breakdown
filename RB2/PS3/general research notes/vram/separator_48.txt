@@ -1,0 +1,180 @@
+goku_0_D_1p_hair_1
+Name offset: 27
+Data offset: 48
+Data size: 36
+Child count: 0
+Child offset: 0
+unk00: 34
+data_offset_image: 43776
+unk08: 0
+data_size_image: 87376
+width_image: 256
+height_image: 256
+unk14: 1
+mip_maps_image: 7
+unk18: 0
+unk1c: 2804419200
+encoding_image: 24
+--------------------------------------------------------
+--------------------------------------------------------
+Separator: 48
+00_goku_0_05_N_1p
+Name offset: 50
+Data offset: 96
+Data size: 36
+Child count: 0
+Child offset: 0
+unk00: 2
+data_offset_image: 131200
+unk08: 0
+data_size_image: 349520
+width_image: 512
+height_image: 512
+unk14: 1
+mip_maps_image: 8
+unk18: 0
+unk1c: 2804419200
+encoding_image: 32
+--------------------------------------------------------
+--------------------------------------------------------
+Separator: 48
+goku_0_D_1p_ase_N
+Name offset: 159
+Data offset: 336
+Data size: 36
+Child count: 0
+Child offset: 0
+unk00: 2
+data_offset_image: 972544
+unk08: 0
+data_size_image: 21840
+width_image: 128
+height_image: 128
+unk14: 1
+mip_maps_image: 6
+unk18: 0
+unk1c: 2804419200
+encoding_image: 32
+--------------------------------------------------------
+--------------------------------------------------------
+Separator: 48
+goku_0_D_1p_tooth_1_N
+Name offset: 205
+Data offset: 432
+Data size: 36
+Child count: 0
+Child offset: 0
+unk00: 2
+data_offset_image: 1038208
+unk08: 0
+data_size_image: 87376
+width_image: 256
+height_image: 256
+unk14: 1
+mip_maps_image: 7
+unk18: 0
+unk1c: 2804419200
+encoding_image: 32
+--------------------------------------------------------
+--------------------------------------------------------
+Separator: 48
+goku_0_D_1p_eye
+Name offset: 305
+Data offset: 624
+Data size: 36
+Child count: 0
+Child offset: 0
+unk00: 34
+data_offset_image: 1300608
+unk08: 0
+data_size_image: 87376
+width_image: 256
+height_image: 256
+unk14: 1
+mip_maps_image: 7
+unk18: 0
+unk1c: 2804419200
+encoding_image: 24
+--------------------------------------------------------
+--------------------------------------------------------
+Separator: 48
+goku_0_D_1p_eair_N
+Name offset: 346
+Data offset: 720
+Data size: 36
+Child count: 0
+Child offset: 0
+unk00: 2
+data_offset_image: 1431808
+unk08: 0
+data_size_image: 87376
+width_image: 256
+height_image: 256
+unk14: 1
+mip_maps_image: 7
+unk18: 0
+unk1c: 2804419200
+encoding_image: 32
+--------------------------------------------------------
+--------------------------------------------------------
+Separator: 48
+goku_0_D_1p_dougi_1
+Name offset: 416
+Data offset: 864
+Data size: 36
+Child count: 0
+Child offset: 0
+unk00: 34
+data_offset_image: 1737856
+unk08: 0
+data_size_image: 87376
+width_image: 256
+height_image: 256
+unk14: 1
+mip_maps_image: 7
+unk18: 0
+unk1c: 2804419200
+encoding_image: 24
+--------------------------------------------------------
+--------------------------------------------------------
+Separator: 48
+goku_0_D_1p_boots_1
+Name offset: 487
+Data offset: 1008
+Data size: 36
+Child count: 0
+Child offset: 0
+unk00: 34
+data_offset_image: 2218624
+unk08: 0
+data_size_image: 87376
+width_image: 256
+height_image: 256
+unk14: 1
+mip_maps_image: 7
+unk18: 0
+unk1c: 2804419200
+encoding_image: 24
+--------------------------------------------------------
+--------------------------------------------------------
+Separator: 48
+goku_0_D_1p_boots_2
+Name offset: 511
+Data offset: 1056
+Data size: 36
+Child count: 0
+Child offset: 0
+unk00: 34
+data_offset_image: 2306048
+unk08: 0
+data_size_image: 87376
+width_image: 256
+height_image: 256
+unk14: 1
+mip_maps_image: 7
+unk18: 0
+unk1c: 2804419200
+encoding_image: 24
+--------------------------------------------------------
+--------------------------------------------------------
+Separator: 48
