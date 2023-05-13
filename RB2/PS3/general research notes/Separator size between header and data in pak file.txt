@@ -1,0 +1,20 @@
+Separator size between header and data in pak files (in bytes)
+
+--- PS3 ---
+vram/ioram
+64 1
+16 (64 - 48) 2
+96 (16 + 80) 3
+48 (96 - 48) 4
+
+spr
+0
+
+other_files
+operate_blast 0 2
+operate_resident_param 0 9
+db_font_pad 0 10
+cs_chip 0 47
+
+
+

@@ -1,0 +1,16 @@
+Separator size between header and data in pak files (in bytes)
+
+--- XBOX ---
+vram/ioram
+4032 bytes with 1 file inside
+3984 (4032 - 48) bytes with 2 files inside
+3936 (3984 - 48) 3
+
+spr
+0
+
+other_files
+operate_blast 1936 2
+operate_resident_param 1600 9
+db_font_pad 1552 10
+cs_chip 0 47
