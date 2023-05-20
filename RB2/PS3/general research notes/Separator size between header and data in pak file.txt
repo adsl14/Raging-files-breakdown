@@ -2,10 +2,14 @@ Separator size between header and data in pak files (in bytes)
 
 --- PS3 ---
 vram/ioram
-64 1
-16 (64 - 48) 2
+64 bytes with 1 file inside
+16 bytes (64 - 48) with 2 files inside
 96 (16 + 80) 3
 48 (96 - 48) 4
+128 (48 + 80) 5
+80 (128 - 48) 6
+160 (80 + 80) 7
+112 (160 - 48) 8
 
 spr
 0
