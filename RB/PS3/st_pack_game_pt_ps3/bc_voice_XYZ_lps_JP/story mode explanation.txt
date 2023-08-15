@@ -9,3 +9,151 @@ now let's say you wanna switch the values, we'll go to spot you want. take note 
 divide that by 4, and convert to hex and move to original gsc file
 now put that new value over the old value (4) 
 done!
+
+0 & 1 GSAC -> Unknown
+
+2 GSAC -> Rewards
+	01 03 10 00 -> scenario_unlock_rewards
+	01 03 11 00 -> music_rewards
+	01 03 12 00 -> museum_rewards
+	01 03 13 00 -> character_rewards
+	01 00 14 00 08 6F 02 00 -> unlock_attacks
+	01 03 15 00 -> item_rewards
+
+3 GSAC -> Stage properties
+	01 03 08 00 -> Stage properties (map, music, number of characters)
+	01 0C 09 00 -> UNK
+	01 00 0A 00 -> UNK (always stars with the following instructions)
+		08 65 03 00 -> UNK
+	01 0F 0B 00 -> Define characters
+		Pointer 0 -> actor ID -> defines an ID for each actor (the values are 1, 2, 3...). Manages who is P1 and CPU. Will be used in instructions of GSAC 5 and so on
+		Pointer 1 -> unk
+		Pointer 2 -> character_id
+		Pointer 3 -> outfit
+		Pointer 4 -> enable_outfit_damaged
+		Pointer 5 -> unk
+		Pointer 6 -> unk
+		Pointer 7 -> health
+	01 06 0C 00 -> Character attacks
+
+4 GSAC -> Control the subtitles
+	08 76 04 00 -> Subtitle
+		Pointer 0 -> text ID (the first subtitle is 0, the second is 1, and so on)
+		Pointer 1 -> unk -> the value is 0 when is used in the story, 1 when is not used
+		Pointer 2 -> text ID (the first subtitle is 0, the second is 1, and so on)
+		Pointer 3 -> Character name (the value is the ID of the character)
+
+5 to the end GSAC -> Events
+	01 00 01 00 08 74 00 00 01 00 03 00 01 00 4C 00 -> means is a GSAC with cutscene
+	01 03 39 00 -> Black shading in
+		Pointer 0 -> UNK
+		Pointer 1 -> UNK
+		Pointer 2 -> UNK
+	01 08 23 00 -> Character position (cutscene)
+		Pointer 0 -> Character ID (Pointer 0 in 01 0F 0B 00) that is positioned
+		Pointer 1 -> UNK (always is 0 in GSDT)
+		Pointer 2 -> position x
+		Pointer 3 -> position y
+		Pointer 4 -> position z
+		Pointer 5 -> rotation x
+		Pointer 6 -> rotation y
+		Pointer 7 -> rotation z
+	01 05 27 00 -> Animation
+		Pointer 0 -> Character ID (Pointer 0 in 01 0F 0B 00) that plays the animation
+		Pointer 1 -> UNK
+		Pointer 2 -> UNK
+		Pointer 3 -> Animation -> GSTD -> 0 Idle, 1 Idle fly, 2 charge in, 3 charge loop
+	01 04 28 00 -> Character face
+		Pointer 0 -> Character ID (Pointer 0 in 01 0F 0B 00) that plays the face animation
+		Pointer 1 -> UNK
+		Pointer 2 -> UNK
+		Pointer 3 -> smile and sweat -> GSTD -> 4 Smile, 6 sweat and smile
+	01 07 34 00 -> camera properties start
+		Pointer 0 -> unk
+		Pointer 1 -> position x
+		Pointer 2 -> position y
+		Pointer 3 -> position z
+		Pointer 4 -> rotation x
+		Pointer 5 -> rotation y
+		Pointer 6 -> rotation z
+	01 08 35 00 -> camera properties end
+		Pointer 0 -> unk
+		Pointer 1 -> unk
+		Pointer 2 -> position x
+		Pointer 3 -> position y
+		Pointer 4 -> position z
+		Pointer 5 -> rotation x
+		Pointer 6 -> rotation y
+		Pointer 7 -> rotation z
+	01 01 1B 00 -> Pause until next iteration
+		Pointer 0 -> Time
+	01 04 20 00 -> Control the ID text, audio and who is talking
+		Pointer 0 -> audio, text and lips animations
+		Pointer 1 -> Enable/Disable P1 talking -> GSTD -> 0 talk, 1 mouth closed (If we enable the P1 character to talk, the following characters won't talk eventhough you enable them)
+		Pointer 2 -> Enable/Disable P2 talking
+		Pointer 3 -> Enable/Disable P3 talking
+	08 70 01 00 -> Following audio to reproduce
+		Pointer 1 -> Audio ID
+	01 02 4B 00 -> UNK
+	01 08 26 00 -> Character position (gameplay)
+		Pointer 0 -> Character P1 or P2
+		Pointer 1 -> position x
+		Pointer 2 -> position y
+		Pointer 3 -> position z
+		Pointer 4 -> rotation x
+		Pointer 5 -> rotation y
+		Pointer 6 -> rotation z
+	01 03 31 00 -> Activate aura
+		Pointer 1 -> UNK
+		Pointer 2 -> UNK
+		Pointer 3 -> Enable/Disable aura
+
+	(From here, the following instructions are mandatory for each GSAC of events)
+	01 00 04 00 01 00 05 00 08 74 07 00 -> How the battle starts and ends
+		Pointer 0 -> Enable/Disable message -> battle starts! (20 in GSTD -> regular start, 02 in GSDT -> starts immediately, 03 in GSDT -> ends battle as a win, 04 in GSDT -> ends battle as a lose)
+		Pointer 1 -> unk
+		Pointer 2 -> unk
+		Pointer 3 -> unk
+		Pointer 4 -> unk
+		Pointer 5 -> unk
+		Pointer 6 -> Id blast attack enemy that will start executing
+	01 00 07 00 -> UNK (always follow the first of one of the following intructions)
+		08 61 02 00 -> Controls what is the following GSAC when enemy reach a certain ammount of health
+			Pointer 0 -> The ammount of health to trigger (87 in GSTD, means 2 spheres of health, 88 in GSTD, means 1 sphere of health)
+			Pointer 1 -> What is the next GSTD (the value is a pointer to the GSAC that is located in his header. It has an ID)
+		08 76 02 00 -> Controls audio and dialogue during gameplay (when player or cpu gets hurted)
+			Pointer 0 -> UNK (-1 in GSTD, means do nothing)
+			Pointer 1 -> UNK (0 in GSTD, means do nothing)
+	01 00 16 00 ->  UNK (always follow the first of one of the following intructions)
+		08 6A 06 00 -> Control the message of what to do (vanish, super attack, etc)
+			Pointer 0 -> When the message will show up -> (GSTD -1 -> dont' activate, GSTD 0 -> at start, GSTD 8 -> 2 spheres of health)
+			Pointer 1 -> unk
+			Pointer 2 -> What action you have to do (GSTD 0 -> nothing, GSTD 1 -> super attack UP, GSTD 8 -> vanish)
+			Pointer 3 -> unk
+			Pointer 4 -> unk
+			Pointer 5 -> unk
+	01 00 0D 00 -> UNK (always follow the following intructions in the same order)
+		08 68 03 00 -> UNK
+		08 48 03 00 -> UNK
+		08 6D 03 00 -> UNK
+		08 4D 03 00 -> UNK
+		08 62 03 00 -> UNK
+		08 62 03 00 -> UNK
+		08 62 03 00 -> UNK
+		08 62 03 00 -> UNK
+		08 62 03 00 -> UNK
+		08 62 03 00 -> UNK
+		08 62 03 00 -> UNK
+	01 00 0E 00 08 63 05 00 -> UNK
+	08 6C 05 00 -> UNK
+	08 68 05 00 -> UNK
+	08 48 05 00 -> How many health stars the cpu
+		Pointer 0 -> Character ID
+		Pointer 1 -> Health ammount (percentage)
+		Pointer 2 -> UNK
+		Pointer 3 -> UNK
+	08 6D 05 00 -> UNK
+	08 4D 05 00 -> UNK
+	08 62 05 00 -> UNK
+	01 00 17 00 08 77 03 00 -> UNK
+	01 00 02 00 -> End of events
