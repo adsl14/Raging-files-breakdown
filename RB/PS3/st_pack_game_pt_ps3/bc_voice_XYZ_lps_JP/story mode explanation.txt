@@ -13,6 +13,8 @@ done!
 0 & 1 GSAC -> Unknown
 
 2 GSAC -> Rewards
+	01 01 00 -> UNK
+	01 03 0F 00 -> UNK
 	01 03 10 00 -> scenario_unlock_rewards
 	01 03 11 00 -> music_rewards
 	01 03 12 00 -> museum_rewards
@@ -34,7 +36,14 @@ done!
 		Pointer 5 -> unk
 		Pointer 6 -> unk
 		Pointer 7 -> health
+		Pointer 8 to 14 -> unk
 	01 06 0C 00 -> Character attacks
+		Pointer 0 -> actor ID -> defines an ID for each actor (the values are 1, 2, 3...). Manages who is P1 and CPU. Will be used in instructions of GSAC 5 and so on
+		Pointer 1 -> up superattack
+		Pointer 2 -> down superattack
+		Pointer 3 -> left superattack
+		Pointer 4 -> right superattack
+		Pointer 5 -> ultra superattack
 
 4 GSAC -> Control the subtitles
 	08 76 04 00 -> Subtitle
