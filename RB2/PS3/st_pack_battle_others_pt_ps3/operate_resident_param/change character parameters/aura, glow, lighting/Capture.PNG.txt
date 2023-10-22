@@ -1,0 +1,12 @@
+this is all i have for now, the unhighlighted values are unknown, i ff'd them and 00'd them and noticed no change so idk
+maroon: health
+lime green: camera
+teal: idle aura size
+dark green: dash aura size
+red: charge aura size
+yellow: lightning color
+dark pink: cutscene lighting
+neon pink: in game lighting
+blue: glow
+purple: IDK (all characters share this)
+unhighlighted: IDK

@@ -1,0 +1,1 @@
+The brow mark are the fusion trigger (What character you need in your team in order to do the fusions. Only works with base form characters) and the fusion visual character (what character will be shown during the fusion)

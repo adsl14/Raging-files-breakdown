@@ -1,0 +1,74 @@
+The file that contains this information is in 03_db_op_prm_resident_character_inf, that can be located in operate_resident_param, from the st_pack_battle_others_pt_ps3
+
+Search for the value 00 00 9C 40 (the first one is Goku, the next Goku ssj, etc)
+
+// Health
+- The 00 00 9C 40 is the health (is a unsigned int (32 bits):
+0 sphere: 1 bar = 0x00002710 -> 10000
+1 spheres: 2 bars = 0x00004E20 -> 20000
+2 spheres: 3 bars = 0x00007530 -> 30000
+3 spheres: 4 bars = 0x00009C40 -> 40000
+4 spheres: 5 bars = 0x0000C350 -> 50000
+5 spheres: 6 bars = 0x0000EA60 -> 60000
+6 spheres: 7 bars = 0x00011170 -> 70000
+7 spheres: 8 bars = 0x00013880 -> 80000
+8 spheres: 9 bars = 0x00015F90 -> 90000 -> game only shows 7 spheres and 8 bars, but in code the character has more health
+max spheres: max bars = 0xFFFFFFFF -> 4294967295
+
+
+// Camera Size (green)
+- After the block of 00 00 9C 40, the three blocks of 4 bytes are related to the camera. Some values I found:
+
+- 3F E0 00 00 3F E0 00 00 3F 00 00 00: Normal
+- 40 20 00 00 40 20 00 00 3F 66 66 66: For bigger characters like Hatchiyack
+
+- The first block stands for camera size in cutscene and fighting
+- The second block stands for camera size in idle
+- The third block stands for character hit box and height
+
+// Glow, lightning (blue)
+- From the position of the first byte 00 from the block 00 00 9C 40, adding 112 positions, you will go to the block that modifies the glow and lightining of the characters. Some values I found:
+
+00 00 00 00: Glow disabled
+00 00 00 01: Super Saiyan
+00 00 00 04: Only lightnings
+00 00 00 05: Glow + lightning
+00 00 00 06: More lightning?
+00 00 00 07: Glow + More lightning?
+
+// Change color of the lightning (yellow)
+- From the position of the first byte 00 from the block 00 00 9C 40, adding 44 positions, you will go to the block that modifies the colour of the lightning of the character. Some values I found:
+
+- Normal: 01 00 00 04
+- Rose (Majin Vegeta): 01 02 00 01
+
+// Aura size (red)
+- From the position of the first byte 00 from the block 00 00 9C 40, adding 36 positions, you will go to the block that modifies the size of the aura. Some values I found:
+
+- Base: 3F 66 66 66
+- Super Saiyan: 3F 99 99 9A
+- Super Saiyan 3: 3F A6 66 66
+- Kid Gohan: 3F 19 99 9A
+
+// Transformations
+
+- Search for 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0B
+
+- Goku starts in pos 66723 and the next position of the next character, is each 33 positions. It has the following values:
+
+01 -> Goku ssj
+02 -> Goku ssj2
+03 -> Goku ssj3
+64 -> Nothing
+
+If you want the character position, do the following: 66723 + (character number * 33)
+To get the value of the character you want to transform, just take the number from the afl (or afs) of the character and convert the number to hex.
+
+The red rectangle below to what transformation you want to transform to
+
+For the type of transformation or returning to base, after the transformations slot and a block of four bytes, there will be four bytes (each for transformation)
+
+00 -> transformation anim
+01 -> return to base anim
+
+Check the green rectangle in the example
