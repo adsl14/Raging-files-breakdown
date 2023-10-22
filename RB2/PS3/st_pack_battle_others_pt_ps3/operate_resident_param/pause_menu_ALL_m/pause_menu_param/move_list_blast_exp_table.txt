@@ -1,0 +1,3 @@
+ID txt file to use when showing the blast attack in pause menu.
+
+It starts in position 16, and each character is 56 length

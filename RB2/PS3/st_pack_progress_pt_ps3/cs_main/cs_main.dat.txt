@@ -1,2 +1,2 @@
-Characters name and transformation names in the select character menu.
+ID text for characters name and transformation names.
 Each character is 80 bytes length

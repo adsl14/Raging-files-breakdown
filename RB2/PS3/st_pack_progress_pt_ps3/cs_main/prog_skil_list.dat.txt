@@ -1,2 +1,3 @@
-List of character attacks for the personalization menu.
-Each character is 168 length
+ID text of attacks for the personalization menu.
+Each character is 168 length.
+It holds the ID text for the names and descriptions

@@ -1,2 +1,18 @@
 Name,Value,Start,Size,Color
-uint blast_attack_list[10],,56,40,Fg: Bg:0x003F7F
+uint Blast_Attack_ID[14],,0h,38h,Fg: Bg:0x00007F
+uint Blast_Attack_Text_ID[14],,38h,38h,Fg: Bg:0x003F7F
+uint Blast_Attack_Text_ID[0],436207616,38h,4h,Fg: Bg:0x003F7F
+uint Blast_Attack_Text_ID[1],2936012800,3Ch,4h,Fg: Bg:0x003F7F
+uint Blast_Attack_Text_ID[2],2952790016,40h,4h,Fg: Bg:0x003F7F
+uint Blast_Attack_Text_ID[3],0,44h,4h,Fg: Bg:0x003F7F
+uint Blast_Attack_Text_ID[4],2483027968,48h,4h,Fg: Bg:0x003F7F
+uint Blast_Attack_Text_ID[5],2919235584,4Ch,4h,Fg: Bg:0x003F7F
+uint Blast_Attack_Text_ID[6],3372220416,50h,4h,Fg: Bg:0x003F7F
+uint Blast_Attack_Text_ID[7],3573547008,54h,4h,Fg: Bg:0x003F7F
+uint Blast_Attack_Text_ID[8],301989888,58h,4h,Fg: Bg:0x003F7F
+uint Blast_Attack_Text_ID[9],889192448,5Ch,4h,Fg: Bg:0x003F7F
+uint Blast_Attack_Text_ID[10],3204448256,60h,4h,Fg: Bg:0x003F7F
+uint Blast_Attack_Text_ID[11],3187671040,64h,4h,Fg: Bg:0x003F7F
+uint Blast_Attack_Text_ID[12],3657433088,68h,4h,Fg: Bg:0x003F7F
+uint Blast_Attack_Text_ID[13],4294967295,6Ch,4h,Fg: Bg:0x003F7F
+uint Blast_Attack_explanation_ID[14],,70h,38h,Fg: Bg:0x7F3F00

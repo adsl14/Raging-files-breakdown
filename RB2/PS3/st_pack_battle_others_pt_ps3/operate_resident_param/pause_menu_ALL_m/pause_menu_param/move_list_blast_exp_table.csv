@@ -1,0 +1,9 @@
+Name,Value,Start,Size,Color
+char Blast_Attack_text_id_0[2],,10h,2h,Fg: Bg:0x0000BF
+char Blast_Attack_explanation_text_id_0[2],,12h,2h,Fg: Bg:0x7F0000
+char Blast_Attack_text_id_1[2],,14h,2h,Fg: Bg:0x007F3F
+char Blast_Attack_explanation_text_id_1[2],,16h,2h,Fg: Bg:0x007F7F
+char Blast_Attack_text_id_2[2],,18h,2h,Fg: Bg:0x0000BF
+char Blast_Attack_explanation_text_id_2[2],,1Ah,2h,Fg: Bg:0x7F0000
+char Blast_Attack_text_id_3[2],,1Ch,2h,Fg: Bg:0x007F3F
+char Blast_Attack_explanation_text_id_3[2],,1Eh,2h,Fg: Bg:0x007F7F

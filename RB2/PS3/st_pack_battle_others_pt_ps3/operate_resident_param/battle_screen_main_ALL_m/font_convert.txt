@@ -1,0 +1,3 @@
+ID txt file to use when showing the blast attack in gameplay when it's triggered.
+
+Each character has his own size (it depends of the number of blast attacks)

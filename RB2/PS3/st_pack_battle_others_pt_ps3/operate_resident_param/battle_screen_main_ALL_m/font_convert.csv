@@ -1,0 +1,7 @@
+Name,Value,Start,Size,Color
+char Character_ID[4],,0h,4h,Fg: Bg:0x00007F
+char Blast_Attack_ID[4],,4h,4h,Fg: Bg:0x0000BF
+char Blast_Attack_ID_text[4],,8h,4h,Fg: Bg:0xBF5F00
+char Character_ID[4],,Ch,4h,Fg: Bg:0xBF00BF
+char Blast_Attack_ID[4],,10h,4h,Fg: Bg:0xBF00BF
+char Blast_Attack_ID_text[4],,14h,4h,Fg: Bg:0x007F7F
