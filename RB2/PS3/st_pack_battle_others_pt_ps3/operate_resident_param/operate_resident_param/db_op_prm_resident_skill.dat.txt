@@ -1,0 +1,4 @@
+Holds the signature skills.
+
+- The first 4 bytes hold the number of characters
+- Each character size is 92 bytes
