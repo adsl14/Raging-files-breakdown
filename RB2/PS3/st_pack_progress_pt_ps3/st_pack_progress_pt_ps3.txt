@@ -8,5 +8,5 @@ cs_chip.zpack
 
 --- Character names ---
 cs_main -> cs_main.dat -> ID text
-K_CharacterName_SP.zpak (spanish) -> Text itself
-K_CharacterName_US.zpak (english) -> Text itself
+K_CharacterName_SP.zpak (spanish) -> Text itself (unknown where is used)
+K_CharacterName_US.zpak (english) -> Text itself (unknown where is used)
