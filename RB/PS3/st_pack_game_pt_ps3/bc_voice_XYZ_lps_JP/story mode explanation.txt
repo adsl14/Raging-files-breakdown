@@ -1,3 +1,5 @@
+For better understaning: https://vivethemodder.github.io/complete-gsc-breakdown/
+
 0A or 1A is a pointer to instructions followed by the value: 0A 04 
 
 to find true value, go to gsdt section copy from under the header to next to last EOFC. paste it into a blank hex file.
@@ -10,23 +12,52 @@ divide that by 4, and convert to hex and move to original gsc file
 now put that new value over the old value (4) 
 done!
 
-0 & 1 GSAC -> Unknown
+Instruction structure: AA BB CC DD
+AA -> 01: function, 08: properties
+BB -> if AA is 01: num of params, if AA is 08: function ID
+CC -> if AA is 01: function ID, if AA is 08: num of params
+00 -> unk
+
+0 GSAC -> Definitions
+	02 00 AB CD -> First GSAC event to load where AB CD is the
+	id of the GSAC to load
+
+1 GSAC -> Unknown
 
 2 GSAC -> Rewards
-	01 01 00 -> UNK
+	01 01 00 00 -> UNK
 	01 03 0F 00 -> UNK
 	01 03 10 00 -> scenario_unlock_rewards
 	01 03 11 00 -> music_rewards
 	01 03 12 00 -> museum_rewards
 	01 03 13 00 -> character_rewards
-	01 00 14 00 08 6F 02 00 -> unlock_attacks
+	01 00 14 00 -> UNK
+	08 6F 02 00 -> unlock_attacks
 	01 03 15 00 -> item_rewards
 
 3 GSAC -> Stage properties
 	01 03 08 00 -> Stage properties (map, music, number of characters)
-	01 0C 09 00 -> UNK
-	01 00 0A 00 -> UNK (always stars with the following instructions)
-		08 65 03 00 -> UNK
+		Pointer 0 -> Map value
+		Pointer 1 -> Music
+		Pointer 2 -> UNK
+	01 0C 09 00 -> Define who is P1 and CPU
+		Pointer 0 -> UNK
+		Pointer 1 -> Select actor ID as P1
+		Pointer 2 -> UNK
+		Pointer 3 -> UNK
+		Pointer 4 -> UNK
+		Pointer 5 -> UNK
+		Pointer 6 -> UNK
+		Pointer 7 -> Select actor ID as CPU
+		Pointer 8 -> UNK
+		Pointer 9 -> UNK
+		Pointer 10 -> UNK
+		Pointer 11 -> UNK
+	01 00 0A 00 -> UNK
+	08 65 03 00 -> Character model partner
+		Pointer 0 -> Model ID
+		Pointer 1 -> UNK
+		Pointer 2 -> UNK
 	01 0F 0B 00 -> Define characters
 		Pointer 0 -> actor ID -> defines an ID for each actor (the values are 1, 2, 3...). Manages who is P1 and CPU. Will be used in instructions of GSAC 5 and so on
 		Pointer 1 -> unk
@@ -35,8 +66,14 @@ done!
 		Pointer 4 -> enable_outfit_damaged
 		Pointer 5 -> unk
 		Pointer 6 -> unk
-		Pointer 7 -> health
-		Pointer 8 to 14 -> unk
+		Pointer 7 -> unk
+		Pointer 8 -> health (27 in GSDT is 3 spheres, 92 is 6 spheres)
+		Pointer 9 -> unk
+		Pointer 10 -> unk
+		Pointer 11 -> unk
+		Pointer 12 -> unk
+		Pointer 13 -> unk
+		Pointer 14 -> unk
 	01 06 0C 00 -> Character attacks
 		Pointer 0 -> actor ID -> defines an ID for each actor (the values are 1, 2, 3...). Manages who is P1 and CPU. Will be used in instructions of GSAC 5 and so on
 		Pointer 1 -> up superattack
@@ -47,20 +84,24 @@ done!
 
 4 GSAC -> Control the subtitles
 	08 76 04 00 -> Subtitle
-		Pointer 0 -> text ID (the first subtitle is 0, the second is 1, and so on)
-		Pointer 1 -> unk -> the value is 0 when is used in the story, 1 when is not used
-		Pointer 2 -> text ID (the first subtitle is 0, the second is 1, and so on)
+		Pointer 0 -> instruction ID (the first instruction is 0, the second is 1, and so on)
+		Pointer 1 -> cutscene subtitle -> the value is 0 when is used in the story, 1 when is not used
+		Pointer 2 -> text and lips ID to be used
 		Pointer 3 -> Character name (the value is the ID of the character)
 
 5 to the end GSAC -> Events
-	01 00 01 00 08 74 00 00 01 00 03 00 01 00 4C 00 -> means is a GSAC with cutscene
-	01 03 39 00 -> Black shading in
+	01 00 01 00 08 74 00 00 01 00 03 00 01 00 4C 00 -> means is a GSAC with cutscene ->
+		01 00 01 00 -> Define cutscene entry. It crashes when you remove it
+		08 74 00 00 -> Disable HUD, activate cutscene mode. It could have 7 parameters -> 08 74 07 00
+		01 00 03 00 -> UNK
+		01 00 4C 00 -> Disable HUD, activate cutscene mode
+	01 03 39 00 -> Black shading in? not sure
 		Pointer 0 -> UNK
 		Pointer 1 -> UNK
 		Pointer 2 -> UNK
 	01 08 23 00 -> Character position (cutscene)
-		Pointer 0 -> Character ID (Pointer 0 in 01 0F 0B 00) that is positioned
-		Pointer 1 -> UNK (always is 0 in GSDT)
+		Pointer 0 -> Character P1 (0) or CPU (1)
+		Pointer 1 -> Enable character partner
 		Pointer 2 -> position x
 		Pointer 3 -> position y
 		Pointer 4 -> position z
@@ -68,15 +109,16 @@ done!
 		Pointer 6 -> rotation y
 		Pointer 7 -> rotation z
 	01 05 27 00 -> Animation
-		Pointer 0 -> Character ID (Pointer 0 in 01 0F 0B 00) that plays the animation
-		Pointer 1 -> UNK
+		Pointer 0 -> Character P1 (0) or CPU (1)
+		Pointer 1 -> Enable character partner
 		Pointer 2 -> UNK
-		Pointer 3 -> Animation -> GSTD -> 0 Idle, 1 Idle fly, 2 charge in, 3 charge loop
+		Pointer 3 -> UNK
+		Pointer 4 -> Animation -> GSTD -> 0 Idle, 1 Idle fly, 2 charge in, 3 charge loop
 	01 04 28 00 -> Character face
-		Pointer 0 -> Character ID (Pointer 0 in 01 0F 0B 00) that plays the face animation
-		Pointer 1 -> UNK
+		Pointer 0 -> Character P1 (0) or CPU (1)
+		Pointer 1 -> Enable character partner
 		Pointer 2 -> UNK
-		Pointer 3 -> smile and sweat -> GSTD -> 4 Smile, 6 sweat and smile
+		Pointer 3 -> smile and sweat -> GSTD -> 2 sweat, 4 Smile, 6 sweat and smile
 	01 07 34 00 -> camera properties start
 		Pointer 0 -> unk
 		Pointer 1 -> position x
@@ -105,7 +147,7 @@ done!
 		Pointer 1 -> Audio ID
 	01 02 4B 00 -> UNK
 	01 08 26 00 -> Character position (gameplay)
-		Pointer 0 -> Character P1 or P2
+		Pointer 0 -> Character P1 (0) or CPU (1)
 		Pointer 1 -> position x
 		Pointer 2 -> position y
 		Pointer 3 -> position z
