@@ -99,9 +99,13 @@ CC -> if AA is 01: function ID, if AA is 08: num of params
 		Pointer 0 -> UNK
 		Pointer 1 -> UNK
 		Pointer 2 -> UNK
+	01 03 22 00 -> Show character
+		Pointer 0 -> Character P1 (0) or CPU (1)
+		Pointer 1 -> Select character partner (1 select partner, 0 select main)
+		Pointer 2 -> Show character (0 hide, 1 show)
 	01 08 23 00 -> Character position (cutscene)
 		Pointer 0 -> Character P1 (0) or CPU (1)
-		Pointer 1 -> Enable character partner
+		Pointer 1 -> Select character partner
 		Pointer 2 -> position x
 		Pointer 3 -> position y
 		Pointer 4 -> position z
