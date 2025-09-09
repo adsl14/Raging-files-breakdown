@@ -5,7 +5,9 @@ Texture properties relation with separator size:
 width==height, encoding: dxt1, separator_vram -> 80
 width==height, encoding: dxt5, separator_vram -> 48
 width!=height, encoding dxt1, separator_vram -> 32
+width!=height, encoding dxt1, mip_maps 9, height 256, separator_vram -> 64
 width!=height, encoding dxt5, separator_vram -> 80
+width!=height, encoding dxt5, mip_maps 9, height 256, separator_vram -> 16
 
 (unk00 -> related_2_encoding in the stpr template)
 unk00: 34, encoding: 24
